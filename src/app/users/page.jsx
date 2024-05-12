@@ -1,6 +1,6 @@
 "use client";
 
-import UserCard from "@/components/UserCard/UserCard";
+import UserCard from "@/components/userCard/UserCard";
 import { deleteUser, fetchData } from "@/utils/api";
 import Link from "next/link";
 import { useEffect, useState } from "react";
