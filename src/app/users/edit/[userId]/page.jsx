@@ -72,7 +72,7 @@ const UpdateUser = () => {
           <div>
             <p className={styles.label}>Gender</p>
             <select
-              defaultValue={gender}
+              value={gender}
               onChange={(e) => setGender(e.target.value)}
               name=""
               id=""
@@ -87,12 +87,12 @@ const UpdateUser = () => {
           <div>
             <p className={styles.label}>Status</p>
             <select
-              defaultValue={status}
+              value={status}
               onChange={(e) => setStatus(e.target.value)}
               name=""
               id=""
             >
-              <option disabled value="alll">
+              <option disabled value="all">
                 Select your option
               </option>
               <option value="active">Active</option>
