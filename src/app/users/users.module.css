@@ -1,0 +1,73 @@
+.container {
+  /* background-color: red; */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.headerContent {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 300px;
+  height: 45px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+
+.button {
+  border: none;
+  padding: 12px 20px;
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+  width: 4px;
+  height: 4px;
+}
+
+.userListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.notFound {
+  min-height: calc(50vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notFound p {
+  color: var(--softTextColor);
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .userListContainer {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .input {
+    display: none;
+  }
+}
